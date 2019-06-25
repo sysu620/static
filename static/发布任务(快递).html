@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../Semantic-UI/dist/semantic.min.css">
+    <script src="../Semantic-UI/dist/jquery-3.3.1.min.js"></script>
+    <script src="../Semantic-UI/dist/semantic.min.js"></script>
+    <style>
+        body{
+            background-color:#F2F6FC;
+        }
+        .ton{
+            background-color: white;
+        }
+        .sty1{
+            font-weight:bold;
+            font-size: 1.3em;
+        }
+        .f{
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgba(102, 102, 255, 0.349019607843137);
+            font-size: 1em;
+        }
+        .pic{
+            width: 100px;
+            height: 100px;
+        }
+        .date{
+            width: 100px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $('.ui.dropdown')
+                .dropdown()
+                ;
+        })
+    </script>
+</head>
+
+<body>
+    <div class="ui blue secondary  inverted menu">       
+        <div class="right menu">
+          <a class="ui item">
+                <i class="large bell icon"></i>
+          </a>
+          <a class="ui item">
+            <i class="large sign out alternate icon"></i>
+          </a>
+        </div>
+    </div>
+    <div id="main1" class = "ui padded grid">
+        <div class = "three wide column"></div>
+        <div class = "ten wide column ton">
+            <div class="ui center aligned container">
+                <div class="ui red padded grid"> 
+                    <div class = "row"></div>
+                    <div class="two wide column"></div>
+                    <div class="twelve wide column ">
+
+                        <div class="ui left aligned container">
+                            <div class = "ui middle aligned grid">
+                                <div class="four wide column sty1 ">
+                                    任务类型
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui selection dropdown">
+                                        <input type="hidden" name="task_type">
+                                        <i class="dropdown icon"></i>
+                                        <div class="default text">任务类型</div>
+                                        <div class="menu">
+                                            <div class="item" data-value="0">快递收取</div>
+                                            <div class="item" data-value="1">问卷填写</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="four wide column sty1">
+                                    任务报酬
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui input">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    &nbsp;&nbsp;&nbsp;币
+                                </div>
+
+                                <div class="four wide column sty1">
+                                    任务时限
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui mini input date" >
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    年
+                                    <div class="ui mini input date">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    月
+                                    <div class="ui mini input date">
+                                        <input type="text" placeholder="">
+                                    </div>
+                                    日
+                                </div>
+                                <div class="four wide column sty1">
+                                    任务具体内容
+                                </div>
+                                <div class="twelve wide column"></div>
+
+                                <div class="four wide column right aligned ">
+                                    快递内容
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui input" >
+                                        <input type="text" placeholder="" style="width:450px;">
+                                    </div>
+                                </div>
+
+                                <div class="four wide column right aligned ">
+                                    快递公司
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui input" >
+                                        <input type="text" placeholder="" style="width:450px;">
+                                    </div>
+                                </div>
+
+                                <div class="four wide column right aligned ">
+                                    领取地点
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui input" >
+                                        <input type="text" placeholder="" style="width:450px;">
+                                    </div>
+                                </div>
+
+                                <div class="four wide column right aligned ">
+                                    交付地点
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui input" >
+                                        <input type="text" placeholder="" style="width:450px;">
+                                    </div>
+                                </div>
+
+                                <div class="four wide column right aligned ">
+                                    其他备注
+                                </div>
+                                <div class="twelve wide column">
+                                    <div class="ui textarea" >
+                                        <textarea rows="3" cols="60">
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="row"></div>
+                                <div class="row"></div>
+                                <div class="twelve wide column"></div>
+                                <div class="three wide column left aligned">
+                                    <button class="ui small blue button" style="width:120px;">发布</button>
+                                </div>
+                                <div class="one wide column"></div>
+                            </div>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="two wide column"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "three wide column"></div>
+        <div class = "row"></div>
+    </div>
+
+    
+</body>
+  <style type="text/css"> 
+    #main1 {
+        padding-top: 48px;
+    }
+    .black_border {
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    .bottom_0 {
+        padding-bottom: 0;
+    }
+  </style> 
+</html>
